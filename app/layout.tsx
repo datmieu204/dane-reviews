@@ -1,36 +1,36 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const outfit = Outfit({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-playfair",
+  variable: "--font-outfit",
   display: "swap",
-  weight: ["600", "700"],
+  weight: ["500", "600", "700", "800"],
 });
 
-const dmSans = DM_Sans({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-dm-sans",
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin", "vietnamese"],
+  variable: "--font-jakarta",
   display: "swap",
   weight: ["400", "500", "600", "700"],
 });
 
 export const viewport: Viewport = {
-  themeColor: "#f3f0eb",
+  themeColor: "#0a0f1d",
   width: "device-width",
   initialScale: 1,
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dane-reviews.vercel.app"),
-  title: "Dane Reviews",
-  description: "Dane Reviews — những sản phẩm mình đề xuất & phong cách sống tối giản.",
-  keywords: ["Dane Reviews", "affiliate", "sản phẩm đề xuất", "review", "minimalist"],
+  title: "Dane Reviews — Curated Picks & Recommendations",
+  description: "Trang đề xuất sản phẩm chất lượng, phong cách tối giản từ Dane Reviews.",
+  keywords: ["Dane Reviews", "affiliate", "sản phẩm đề xuất", "curated", "minimalist"],
   authors: [{ name: "Dane Reviews" }],
   openGraph: {
-    title: "Dane Reviews",
-    description: "Dane Reviews — những sản phẩm mình đề xuất & phong cách sống tối giản.",
+    title: "Dane Reviews — Curated Picks & Recommendations",
+    description: "Trang đề xuất sản phẩm chất lượng, phong cách tối giản từ Dane Reviews.",
     type: "website",
     locale: "vi_VN",
     images: [
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary",
-    title: "Dane Reviews",
-    description: "Dane Reviews — những sản phẩm mình đề xuất & phong cách sống tối giản.",
+    card: "summary_large_image",
+    title: "Dane Reviews — Curated Picks",
+    description: "Trang đề xuất sản phẩm chất lượng, phong cách tối giản từ Dane Reviews.",
     images: ["/avatar.jpg"],
   },
 };
@@ -56,9 +56,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="vi" className={`${playfair.variable} ${dmSans.variable}`}>
+    <html lang="vi" data-theme="dark" className={`${outfit.variable} ${plusJakarta.variable}`}>
       <body>
-        <div className="ambient-glow" aria-hidden="true" />
+        <div className="mesh-gradient-bg" aria-hidden="true" />
+        <div className="grid-overlay-pattern" aria-hidden="true" />
         <div className="page-container">{children}</div>
       </body>
     </html>
