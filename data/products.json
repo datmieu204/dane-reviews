@@ -1,0 +1,44 @@
+[
+  {
+    "code": "TD1",
+    "name": "Quần suông ống rộng phong cách tối giản",
+    "image": "/products/TD1.jpg",
+    "url": "https://s.shopee.vn/dane-td1",
+    "active": true
+  },
+  {
+    "code": "TD2",
+    "name": "Áo sơ mi linen form rộng thanh lịch",
+    "image": "/products/TD2.jpg",
+    "url": "https://vt.tiktok.com/dane-td2",
+    "active": true
+  },
+  {
+    "code": "TD3",
+    "name": "Túi tote canvas dày dặn đa năng",
+    "image": "/products/TD3.jpg",
+    "url": "https://s.shopee.vn/dane-td3",
+    "active": true
+  },
+  {
+    "code": "TD4",
+    "name": "Áo polo dệt kim cổ bẻ phong cách vintage",
+    "image": "/products/TD4.jpg",
+    "url": "https://vt.tiktok.com/dane-td4",
+    "active": true
+  },
+  {
+    "code": "TD5",
+    "name": "Giày loafer da mềm phong cách Hàn Quốc",
+    "image": "/products/TD5.jpg",
+    "url": "https://s.shopee.vn/dane-td5",
+    "active": true
+  },
+  {
+    "code": "TD6",
+    "name": "Bình giữ nhiệt inox phong cách minimalist",
+    "image": "/products/TD6.jpg",
+    "url": "https://s.shopee.vn/dane-td6",
+    "active": true
+  }
+]
